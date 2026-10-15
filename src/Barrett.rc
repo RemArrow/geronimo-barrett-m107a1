@@ -1,0 +1,38 @@
+// Barrett.dll resources: the encrypted assets and the version/credits block.
+#include "version.h"
+
+// The Barrett's runtime assets as one encrypted payload. build.bat first runs tools\pack over Assets\
+// (generated from the user's own export by tools\prep, never in the repo): every asset is AES-256-GCM
+// encrypted with a per-build key, so the DLL holds no extractable PNG or OBJ (src\payload.h).
+DATA RCDATA "build\\gen\\payload.bin"
+
+// Shown in the DLL's Properties > Details in Windows.
+1 VERSIONINFO
+FILEVERSION BARRETT_VERSION_NUM
+PRODUCTVERSION BARRETT_VERSION_NUM
+FILEFLAGSMASK 0x3F
+FILEFLAGS 0x0
+FILEOS 0x40004
+FILETYPE 0x2
+FILESUBTYPE 0x0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "RemArrow"
+            VALUE "FileDescription", "Barrett M107A1 - GML plugin for Geronimo (personal use)"
+            VALUE "FileVersion", BARRETT_VERSION
+            VALUE "InternalName", "Barrett"
+            VALUE "OriginalFilename", "Barrett.dll"
+            VALUE "ProductName", "Barrett M107A1"
+            VALUE "ProductVersion", BARRETT_VERSION
+            VALUE "LegalCopyright", BARRETT_MODEL_CREDIT ". Plugin code by RemArrow."
+            VALUE "Comments", "Not affiliated with or endorsed by Barrett Firearms, the WTT team, Battlestate Games or Dark Matter Studios. Do not distribute."
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

@@ -1,0 +1,14 @@
+Barrett M107A1 for Geronimo - credits
+=====================================
+
+3D model and textures
+  Barrett M107A1 (with its 10-round magazine) from the WTT-Armory mod for SPT (Single Player Tarkov),
+  with parts from Escape from Tarkov by Battlestate Games. Exported by the user from their own install,
+  for personal use only. This plugin is not for distribution: the art ships only inside Barrett.dll,
+  encrypted, and must not be shared.
+
+Plugin
+  RemArrow - https://github.com/RemArrow
+  Runs on GML, the Geronimo Mod Loader: https://github.com/RemArrow/geronimo-mod-loader
+
+Not affiliated with or endorsed by Barrett Firearms, the WTT team, Battlestate Games or Dark Matter Studios.

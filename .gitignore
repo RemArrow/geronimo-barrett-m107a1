@@ -1,0 +1,10 @@
+# build output (build\obj\Barrett.res and build\gen\ carry the encrypted art and its key)
+build/
+tools/prep/bin/
+tools/prep/obj/
+
+# From the user's own Escape from Tarkov / SPT export (personal use only) - never commit
+Assets/
+*.png
+*.gltf
+*.bin
