@@ -2,8 +2,8 @@
 // resource (Barrett.rc).
 #pragma once
 
-#define BARRETT_VERSION_NUM 0, 2, 0, 0
-#define BARRETT_VERSION "0.2.0"
+#define BARRETT_VERSION_NUM 0, 2, 1, 0
+#define BARRETT_VERSION "0.2.1"
 
 #define BARRETT_MODEL_CREDIT                                                                                  \
     "3D model and textures: Barrett M107A1 from the WTT-Armory mod for SPT (Escape from Tarkov), exported by " \

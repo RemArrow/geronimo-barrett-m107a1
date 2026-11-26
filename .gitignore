@@ -8,3 +8,5 @@ Assets/
 *.png
 *.gltf
 *.bin
+tools/srgb/bin/
+tools/srgb/obj/
